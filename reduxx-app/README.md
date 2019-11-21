@@ -15,7 +15,7 @@ const decrement = () => {
     }
 }
 
-**Reducer where the instructions for the action are placed**
+**REDUCER -> where the instructions for the action are placed**
 
 const counter = (state = 0, action) => {
     switch(action.type) {
