@@ -34,3 +34,6 @@ store.subscribe(() => console.log(store.getState()));
 **DISPATCH -> Used to dispatch our action and state**
 store.dispatch(increment());
 store.dispatch(decrement());
+
+
+//Is this the proper way to break up the buttons?

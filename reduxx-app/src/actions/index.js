@@ -6,9 +6,30 @@ export const incrementK = () => {
         type: 'INCREMENT_KENZIE'
     };
 }
+export const blastK = () => {
+    return{
+        type: 'BLAST_K'
+    };
+}
+export const decrementK = () => {
+    return{
+        type: 'DECREMENT_KENZIE'
+    };
+}
 
 export const incrementL = () => {
     return{
         type: 'INCREMENT_LINCOLN'
+    };
+}
+
+export const blastL = () => {
+    return{
+        type: 'BLAST_L'
+    };
+}
+export const decrementL = () => {
+    return{
+        type: 'DECREMENT_LINCOLN'
     };
 }
