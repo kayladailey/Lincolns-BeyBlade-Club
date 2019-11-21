@@ -1,8 +1,8 @@
 
-//STORE -> Data holder of our globalized state
+**STORE -> Data holder of our globalized state**
 const store = createStore(counter);
 
-//ACTION -> Name your action for the 'thing' you would like to do. function that returns an object
+**ACTION -> Name your action for the reducer you would like to do. A function that returns an object**
 const increment =() =>{
     return{
         type: "INCREMENT"
@@ -15,7 +15,8 @@ const decrement = () => {
     }
 }
 
-//Reducer
+**Reducer where the instructions for the action are placed**
+
 const counter = (state = 0, action) => {
     switch(action.type) {
         case "INCREMENT":
@@ -30,8 +31,6 @@ const counter = (state = 0, action) => {
 store.subscribe(() => console.log(store.getState()));
 
 
-//DISPATCH ->
+**DISPATCH -> Used to dispatch our action and state**
 store.dispatch(increment());
 store.dispatch(decrement());
-
-ReactDOM.render(<App />, document.getElementById('root'));
