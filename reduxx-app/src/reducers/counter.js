@@ -1,9 +1,9 @@
 //Reducer
-const counterReducer = (state = 0, action) => {
+const kenzieReducer = (state = 0, action) => {
     switch(action.type) {
-        case "INCREMENT":
+        case "INCREMENT_KENZIE":
             return state + 1;
-        case "DECREMENT":
+        case "DECREMENT_KENZIE":
             return state - 1;
         
         default:
@@ -12,4 +12,5 @@ const counterReducer = (state = 0, action) => {
     
 }
 
-export default counterReducer;
+export default kenzieReducer;
+    
