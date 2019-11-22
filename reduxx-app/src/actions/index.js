@@ -25,7 +25,7 @@ export const incrementL = () => {
 
 export const blastL = () => {
     return{
-        type: 'BLAST_L'
+        type: 'BLAST'
     };
 }
 export const decrementL = () => {

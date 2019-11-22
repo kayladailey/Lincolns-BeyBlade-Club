@@ -1,7 +1,8 @@
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux'; // To access a piece of state. We are going to use this to access and display the counter and logged reducer
 import {incrementL, incrementK, decrementL, decrementK,blastK,blastL} from './actions';
-import {Card, Image, Button} from 'semantic-ui-react';
+import {Card, Image, Button, } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   const counter = useSelector(state => state.counter)
@@ -11,37 +12,44 @@ function App() {
 
   return (
     <div className="App">
-     <h1> BeyBlade Tournament! </h1>
-    
-    
+     {/* <Image src=''/> */}
+    <Card.Group className='card-container'>
      <Card>
-      <Image src='' wrapped ui={false} />
+       <Image src='https://i.pinimg.com/564x/56/5e/b4/565eb4918662c9ab7ce48fd04dbeae6a.jpg' wrapped ui={false} />
       <Card.Content>
-        <Card.Header>Kenzie{counter}</Card.Header>
-        <Card.Meta>Joined in 2016</Card.Meta>
+        <Card.Header></Card.Header>
+        <Card.Meta>Team: Sparkle Blades</Card.Meta>
         <Card.Description>
-          Daniel is a comedian living in Nashville.
+          <Button onClick ={() => dispatch(incrementK())} > +</Button>
+          <Button onClick ={() => dispatch(blastK(5))} > BLAST!</Button>
+          <Button onClick ={() => dispatch(decrementK())} > -</Button>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
-     <Button onClick ={() => dispatch(incrementK())} > +</Button>
-     <Button onClick ={() => dispatch(blastK(5))} > BLAST</Button>
-     <Button onClick ={() => dispatch(decrementK())} > -</Button>
-        </a>
+        <h1>Kenzie {counter}</h1>
       </Card.Content>
     </Card>
-     {/* <h2> Kenzie {counter}</h2>
-     <button onClick ={() => dispatch(incrementK())} > +</button>
-     <button onClick ={() => dispatch(blastK(5))} > BLAST</button>
-     <button onClick ={() => dispatch(decrementK())} > -</button> */}
 
-     <h2> Lincoln {counterL}</h2>
-     <button onClick ={() => dispatch(incrementL())} > +</button>
-     <button onClick ={() => dispatch(blastL(5))} > BLAST</button>
-     <button onClick ={() => dispatch(decrementL())} > -</button>
-     {isLogged ? <h3>Valuable Info</h3> :''}
-    </div>
+<Card>
+<Image src='https://i.ebayimg.com/images/g/P6kAAOSwL8pciuzH/s-l500.jpg' wrapped ui={false} />
+<Card.Content>
+  <Card.Header></Card.Header>
+  <Card.Meta>Team: Blaster Blades</Card.Meta>
+  <Card.Description>
+    <Button onClick ={() => dispatch(incrementL())} > +</Button>
+    <Button onClick ={() => dispatch(blastL(5))} > BLAST!</Button>
+    <Button onClick ={() => dispatch(decrementL())} > -</Button>
+  </Card.Description>
+</Card.Content>
+<Card.Content extra>
+  <h1>Lincoln{counterL}</h1>
+</Card.Content>
+</Card>
+</Card.Group>
+
+{isLogged ? <h3>Valuable Info</h3> :''}
+
+</div>
   );
 }
 
