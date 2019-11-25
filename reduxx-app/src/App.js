@@ -26,7 +26,7 @@ function App() {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <h1>Kenzie {counter}</h1>
+        <h1>Kenzie  {counter}</h1>
       </Card.Content>
     </Card>
 
@@ -42,7 +42,7 @@ function App() {
   </Card.Description>
 </Card.Content>
 <Card.Content extra>
-  <h1>Lincoln{counterL}</h1>
+  <h1>Lincoln   {counterL}</h1>
 </Card.Content>
 </Card>
 </Card.Group>
