@@ -7,9 +7,6 @@ import {Card, Image, Button } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 
-
-
-
 function Cards () {
     const counter = useSelector(state => state.counter)
     const counterD = useSelector(state => state.counterDad)
@@ -19,7 +16,7 @@ function Cards () {
 
 return (
   <Card.Group className='card-container'>
-      <div className='top-card'>
+   
         <Card>
         <Image src='https://i.pinimg.com/564x/9e/f3/e0/9ef3e0eb5b43ecf2a14c7c108820a940.jpg' wrapped ui={false} />
         <Card.Content>
@@ -45,7 +42,33 @@ return (
         <h1>Lincoln   {counterL} </h1>
       </Card.Content>
       </Card>
-    </div>
+ 
+
+    <Card >
+<Image src='https://images-na.ssl-images-amazon.com/images/I/71t2HvnLQEL._SX425_.jpg' wrapped ui={false} />
+<Card.Content>
+  <Card.Meta>Team: The Enforcers </Card.Meta>
+  <Card.Description>
+    <Button onClick ={() => dispatch(incrementMom())} > +</Button>
+    <Button onClick ={() => dispatch(blastMom(5))} > BLAST!</Button>
+    <Button onClick ={() => dispatch(decrementMom())} > -</Button>
+  </Card.Description>
+  <h1>Mommy {counterMom} </h1>
+</Card.Content>
+</Card>
+
+<Card>
+<Image src='https://samuraibuyer.com/content/product/4904810134503_338x338[1].jpg' wrapped ui={false} />
+<Card.Content>
+  <Card.Meta>Team: Blaster Blades</Card.Meta>
+  <Card.Description>
+    <Button onClick ={() => dispatch(incrementDad())} > +</Button>
+    <Button onClick ={() => dispatch(blastDad(5))} > BLAST!</Button>
+    <Button onClick ={() => dispatch(decrementDad())} > -</Button>
+  </Card.Description>
+  <h1>Dad   {counterD} </h1>
+</Card.Content>
+</Card>
 </Card.Group>
 
 )}

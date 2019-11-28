@@ -18,7 +18,8 @@ code {
 background-image: url('https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/66481856_307321730016564_2476096741187780608_o.png?_nc_cat=104&_nc_ohc=OD5NllBqvQQAQkHrttBx9cnNaLbnut1KLdREowpfay_Lm5qaLAsao32Yg&_nc_ht=scontent-dfw5-2.xx&oh=91c72efd63df38caf7bade9f0532ef07&oe=5E896E0E');
 display: flex;
 justify-content: center;
-height: 100%;
+align-items: stretch;
+height: 1500px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -28,13 +29,7 @@ background-size: cover;
   background-color: black;
   padding: 25px;
   border-radius: 15px;
+  height: 550px;
+  position: absolute;
+  top:400px;
 } 
-
-.card-top{
-display: flex;
-justify-content: center;
-}
-
-.card-bottom{
-
-  }
