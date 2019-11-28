@@ -33,3 +33,37 @@ export const decrementL = () => {
         type: 'DECREMENT_LINCOLN'
     };
 }
+
+export const incrementDad = () => {
+    return{
+        type: 'INCREMENT_DAD'
+    };
+}
+
+export const blastDad = () => {
+    return{
+        type: 'BLAST_DAD'
+    };
+}
+export const decrementDad= () => {
+    return{
+        type: 'DECREMENT_DAD'
+    };
+}
+
+export const incrementMom = () => {
+    return{
+        type: 'INCREMENT_Mom'
+    };
+}
+
+export const blastMom = () => {
+    return{
+        type: 'BLAST_MOM'
+    };
+}
+export const decrementMom = () => {
+    return{
+        type: 'DECREMENT_MOM'
+    };
+}

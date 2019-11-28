@@ -1,16 +1,16 @@
 import React from 'react';
-import Lincoln from './components/Lincoln';
-import Kenzie from './components/Kenzie';
+import Cards from './components/Cards';
 
-    function App() {
-      return (
-        <div className="App">
-          <div className = 'card-container'>
-          <Kenzie/>
-          <Lincoln />
+ function App() {
+    return (
+      <div className="App">
+        <div className ='card-container'>
+        <Cards/>
         </div>
         </div>
           );
         }
 
+
         export default App;
+

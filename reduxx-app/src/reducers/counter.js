@@ -5,7 +5,8 @@ const kenzieReducer = (state = 0, action) => {
             return state + 1;
         case "DECREMENT_KENZIE":
             return state - 1;
-        
+            case "BLAST_K":
+                return state + 5;
         default:
             return state;
     }
