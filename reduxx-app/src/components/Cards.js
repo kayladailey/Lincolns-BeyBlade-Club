@@ -23,7 +23,7 @@ return (
           <Card.Meta>Team: Glitter Power</Card.Meta>
           <Card.Description>
             <Button onClick ={() => dispatch(incrementK())} > +</Button>
-            <Button onClick ={() => dispatch(blastK(5))} > BLAST!</Button>
+            <Button inverted color='red' onClick ={() => dispatch(blastK(5))} > BLAST!</Button>
             <Button onClick ={() => dispatch(decrementK())} > -</Button>
           </Card.Description>
           <h1> Kenzie {counter} </h1>
