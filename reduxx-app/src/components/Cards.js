@@ -22,9 +22,9 @@ return (
         <Card.Content>
           <Card.Meta>Team: Glitter Power</Card.Meta>
           <Card.Description>
-            <Button onClick ={() => dispatch(incrementK())} > +</Button>
+            <Button basic color='black' onClick ={() => dispatch(incrementK())} > +</Button>
             <Button inverted color='red' onClick ={() => dispatch(blastK(5))} > BLAST!</Button>
-            <Button onClick ={() => dispatch(decrementK())} > -</Button>
+            <Button basic color='black' onClick ={() => dispatch(decrementK())} > -</Button>
           </Card.Description>
           <h1> Kenzie {counter} </h1>
         </Card.Content>
@@ -35,9 +35,9 @@ return (
       <Card.Content>
         <Card.Meta>Team: Blaster Blades</Card.Meta>
         <Card.Description>
-          <Button onClick ={() => dispatch(incrementL())} > +</Button>
-          <Button onClick ={() => dispatch(blastL(5))} > BLAST!</Button>
-          <Button onClick ={() => dispatch(decrementL())} > -</Button>
+          <Button basic color='black' onClick ={() => dispatch(incrementL())} > +</Button>
+          <Button inverted color='red' onClick ={() => dispatch(blastL(5))} > BLAST!</Button>
+          <Button basic color='black' onClick ={() => dispatch(decrementL())} > -</Button>
         </Card.Description>
         <h1>Lincoln   {counterL} </h1>
       </Card.Content>
@@ -49,9 +49,9 @@ return (
 <Card.Content>
   <Card.Meta>Team: The Enforcers </Card.Meta>
   <Card.Description>
-    <Button onClick ={() => dispatch(incrementMom())} > +</Button>
-    <Button onClick ={() => dispatch(blastMom(5))} > BLAST!</Button>
-    <Button onClick ={() => dispatch(decrementMom())} > -</Button>
+    <Button basic color='black' onClick ={() => dispatch(incrementMom())} > +</Button>
+    <Button inverted color='red' onClick ={() => dispatch(blastMom(5))} > BLAST!</Button>
+    <Button basic color='black' onClick ={() => dispatch(decrementMom())} > -</Button>
   </Card.Description>
   <h1>Mommy {counterMom} </h1>
 </Card.Content>
@@ -62,9 +62,9 @@ return (
 <Card.Content>
   <Card.Meta>Team: Blaster Blades</Card.Meta>
   <Card.Description>
-    <Button onClick ={() => dispatch(incrementDad())} > +</Button>
-    <Button onClick ={() => dispatch(blastDad(5))} > BLAST!</Button>
-    <Button onClick ={() => dispatch(decrementDad())} > -</Button>
+    <Button basic color='black' onClick ={() => dispatch(incrementDad())} > +</Button>
+    <Button inverted color='red' onClick ={() => dispatch(blastDad(5))} > BLAST!</Button>
+    <Button basic color='black' onClick ={() => dispatch(decrementDad())} > -</Button>
   </Card.Description>
   <h1>Dad   {counterD} </h1>
 </Card.Content>
