@@ -24,7 +24,7 @@ return (
           <Card.Description>
             <Button basic color='black' onClick ={() => dispatch(incrementK())} > +</Button>
             <Button inverted color='red' onClick ={() => dispatch(blastK(5))} > BLAST!</Button>
-            <Button basic color='black' onClick ={() => dispatch(decrementK())} > -</Button>
+            <Button basic color='black' onClick ={() => dispatch(decrementK())} > --</Button>
           </Card.Description>
           <h1> Kenzie {counter} </h1>
         </Card.Content>
