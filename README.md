@@ -1,4 +1,5 @@
 
+
 **STORE -> Data holder of our globalized state**
 const store = createStore(counter);
 
@@ -37,3 +38,6 @@ store.dispatch(decrement());
 
 
 //Is this the proper way to break up the buttons?
+=======
+A score for our kids to use for their BeyBlade battles. This App was created with Redux and Semantic-UI-React for styling.
+
