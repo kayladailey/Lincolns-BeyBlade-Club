@@ -1,4 +1,4 @@
-
+<!-- 
 **STORE -> Data holder of our globalized state**
 const store = createStore(counter);
 
@@ -36,4 +36,4 @@ store.dispatch(increment());
 store.dispatch(decrement());
 
 
-//Is this the proper way to break up the buttons?
+//Is this the proper way to break up the buttons? -->
